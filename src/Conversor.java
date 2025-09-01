@@ -16,7 +16,8 @@ public class Conversor {
         System.out.println("Moeda de Destino: ");
         moedaDestino = scanner.nextLine();
 
-        System.out.println(" Qual o valor de 1 " + moedaOrigem + " em " + moedaDestino +"?");
+        System.out.println(" Qual o valor de 1 " + moedaOrigem + "em " + moedaDestino +"?");
+        valorCotacaoOrigem = scanner.nextDouble();
 
         efetuarConversao();
     }
@@ -29,10 +30,10 @@ public class Conversor {
     private void exibirResultado(){
         System.out.println("xxxxxxxxxxxxxxxxxxxxxx");
         System.out.println("  R E S U L T A D O S");
-        System.out.println("Moeda de origem" +moedaOrigem);
-        System.out.println("Moeda de destino" +moedaDestino);
+        System.out.println("Moeda de origem " +moedaOrigem);
+        System.out.println("Moeda de destino " +moedaDestino);
         String valorCotacaoDestinoComDoisDecimais = String.format("%.2f", valorCotacaoDestino);
-        System.out.println("1" + moedaOrigem + "=" +valorCotacaoDestinoComDoisDecimais + " " + moedaDestino );
+        System.out.println("1 " + moedaOrigem + " = " +valorCotacaoDestinoComDoisDecimais + " " + moedaDestino );
         System.out.println("xxxxxxxxxxxxxxxxxxxxxxx");
     }
 
